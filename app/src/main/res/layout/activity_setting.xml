@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.mobile.donut.SettingActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_height="80dp"
+            android:layout_width="80dp"
+            app:srcCompat="@drawable/icon_info" />
+
+        <Button
+            android:id="@+id/btnInfo"
+            android:text="내 정보"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:background="#00ff0000"
+            android:onClick="onBtnInfo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_height="80dp"
+            android:layout_width="80dp"
+            app:srcCompat="@drawable/icon_connect" />
+
+        <Button
+            android:id="@+id/btnSetCon"
+            android:text="연결관리"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:background="#00ff0000"
+            android:onClick="onBtnSetCon"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_height="80dp"
+            android:layout_width="80dp"
+            app:srcCompat="@drawable/icon_app_info"
+            android:layout_weight="1"
+            android:id="@+id/imageView3"/>
+
+        <Button
+            android:id="@+id/btnAppInfo"
+            android:text="개발자 정보"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:background="#00ff0000"
+            android:onClick="onBtnAppInfo"/>
+    </LinearLayout>
+</LinearLayout>

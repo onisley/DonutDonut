@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GraphView">
+        <attr name="pointColor_min" format="color"/>    // 지출그래프
+        <attr name="lineColor_min" format="color"/>
+        <attr name="pointColor_max" format="color"/>    // 수입그래프
+        <attr name="lineColor_max" format="color"/>
+
+        <attr name="pointSize" format="dimension"/>
+        <attr name="lineThickness" format="dimension"/>
+    </declare-styleable>
+</resources>

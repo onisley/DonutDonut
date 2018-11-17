@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".GraphActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp">
+            <EditText
+                android:id="@+id/editYear"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="년도 입력" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onBtnShow"
+                    android:text="보기" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="수입"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/total_in"
+                    android:layout_width="180dp"
+                    android:layout_height="46dp"
+                    android:hint="기간동안 총 수입 금액"
+                    android:textAlignment="center"
+                    android:paddingVertical="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="지출"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/total_out"
+                    android:layout_width="180dp"
+                    android:layout_height="46dp"
+                    android:hint="기간동안 총 지출 금액"
+                    android:textAlignment="center"
+                    android:paddingVertical="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_max">
+
+
+        <com.mobile.donut.GraphView
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/GraphView"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            app:lineColor_max="#cc11cc"
+            app:lineColor_min="#0088bb"
+            app:lineThickness="2dp"
+            app:pointColor_max="#ff4855"
+            app:pointColor_min="#73cc"
+            app:pointSize="8dp">
+
+        </com.mobile.donut.GraphView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start"
+                android:text="수입 ㅡ"
+                android:textColor="#0088bb"
+                android:textAlignment="textStart"
+                />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="지출 ㅡ"
+                android:textColor="#cc11cc"
+                android:textAlignment="textStart"
+                android:gravity="start" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

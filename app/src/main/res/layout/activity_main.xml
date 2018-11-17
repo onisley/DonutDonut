@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.mobile.donut.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_height="80dp"
+            android:layout_width="80dp"
+            app:srcCompat="@drawable/icon_donut" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="45sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:text="메인 메뉴"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_height="45dp"
+            android:layout_width="45dp"
+            app:srcCompat="@drawable/icon_list" />
+
+        <Button
+            android:text="지출 내역 리스트"
+            android:id="@+id/btnList"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:background="#00ff0000"
+            android:baselineAligned="false"
+            android:onClick="onBtnList"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            app:srcCompat="@drawable/icon_graph" />
+
+        <Button
+            android:text="통계"
+            android:id="@+id/btnGraph"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:background="#00ff0000"
+            android:baselineAligned="false"
+            android:onClick="onBtnGraph"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            app:srcCompat="@drawable/icon_alarm" />
+
+        <Button
+            android:text="알람"
+            android:id="@+id/btnAlarm"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:background="#00ff0000"
+            android:baselineAligned="false"
+            android:onClick="onBtnAlarm"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            app:srcCompat="@drawable/icon_save"
+            android:layout_weight="1"
+            android:id="@+id/imageViewSave"/>
+
+        <Button
+            android:text="저축"
+            android:id="@+id/btnSave"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:background="#00ff0000"
+            android:baselineAligned="false"
+            android:onClick="onBtnSave"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            app:srcCompat="@drawable/icon_setting" />
+
+        <Button
+            android:text="설정"
+            android:id="@+id/btnSet"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:background="#00ff0000"
+            android:baselineAligned="false"
+            android:onClick="onBtnSetting"/>
+
+    </LinearLayout>
+
+</LinearLayout>

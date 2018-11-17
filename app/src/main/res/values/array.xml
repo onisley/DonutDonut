@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+
+    <string-array name="성명">
+
+        <item>권소영</item>
+
+        <item>방은지</item>
+
+    </string-array>
+
+</resources>

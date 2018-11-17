@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<android.support.constraint.ConstraintLayout tools:context=".AlarmActivity" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:orientation="vertical" android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp">
+
+        <Switch android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_margin="15dp" android:textSize="9pt" tools:layout_editor_absoluteY="56dp" tools:layout_editor_absoluteX="136dp" android:text="알람 사용하지 않음" android:layout_gravity="center" android:id="@+id/switchAlarm"/>
+
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_margin="12dp" android:textSize="8pt" android:text="돈 넣기로 한 날에 알려드려요!" android:layout_gravity="center"/>
+
+
+        <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="vertical" android:id="@+id/layoutSetting">
+
+
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="horizontal">
+
+                <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_margin="13dp" android:textSize="9pt" android:text="입금 시작일"/>
+
+                <EditText android:layout_height="wrap_content" android:layout_width="200dp" android:textSize="9pt" android:layout_gravity="right" android:hint="입금 시작일 선택" android:inputType="date" android:ems="10"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="horizontal">
+
+                <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_margin="13dp" android:textSize="9pt" android:text="주기 설정"/>
+
+                <EditText android:layout_height="wrap_content" android:layout_width="200dp" android:textSize="9pt" android:layout_gravity="right" android:hint="입금 주기 선택" android:inputType="date" android:ems="10"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="horizontal">
+
+                <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_margin="13dp" android:textSize="9pt" android:text="금액 설정"/>
+
+                <EditText android:layout_height="wrap_content" android:layout_width="200dp" android:textSize="9pt" android:layout_gravity="right" android:id="@+id/editText2" android:hint="금액을 입력해 주세요" android:inputType="number" android:ems="10"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="horizontal" android:layout_margin="15dp" android:gravity="center">
+
+            <Button
+                android:id="@+id/setbtn"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onSetClicek"
+                android:text="설정" />
+
+            <Button
+                android:id="@+id/cancelbtn"
+                android:layout_width="2dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onCancelClick"
+                android:text="취소" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

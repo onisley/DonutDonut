@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<android.support.constraint.ConstraintLayout tools:context=".SetActivity" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText android:layout_height="wrap_content" android:layout_width="138dp" tools:ignore="MissingConstraints" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" android:inputType="textPersonName" android:hint="목표액" android:ems="10" android:layout_marginTop="28dp" android:layout_marginStart="16dp" android:id="@+id/editText"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" tools:ignore="MissingConstraints" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="28dp" android:layout_marginStart="8dp" android:id="@+id/textView2" app:layout_constraintStart_toEndOf="@+id/editText" android:textSize="30dp" android:text="을"/>
+
+    <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content" tools:ignore="MissingConstraints" app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="32dp" android:layout_marginStart="16dp" android:id="@+id/imageButton" app:srcCompat="@drawable/icon_calender" app:layout_constraintTop_toBottomOf="@+id/editText"/>
+
+    <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content" tools:ignore="MissingConstraints" app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="52dp" android:layout_marginStart="16dp" android:id="@+id/imageButton2" app:srcCompat="@drawable/icon_calender" app:layout_constraintTop_toBottomOf="@+id/imageButton"/>
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="날짜 선택하면 자동 입력"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:inputType="textPersonName" android:hint="날짜 선택하면 자동 입력" android:ems="10" android:layout_marginTop="20dp" android:layout_marginStart="16dp" android:id="@+id/editText3" app:layout_constraintStart_toEndOf="@+id/imageButton2" app:layout_constraintTop_toBottomOf="@+id/textView3"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" tools:ignore="MissingConstraints" app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="12dp" android:layout_marginStart="8dp" android:id="@+id/textView3" android:textSize="30dp" android:text="~" app:layout_constraintTop_toBottomOf="@+id/editText2" app:layout_constraintHorizontal_bias="0.501" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
+
+    <Spinner android:layout_height="36dp" android:layout_width="155dp" app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="36dp" android:layout_marginStart="16dp" android:id="@+id/spinner2" app:layout_constraintTop_toBottomOf="@+id/imageButton2"/>
+
+    <Spinner android:layout_height="34dp" android:layout_width="155dp" app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="32dp" android:layout_marginStart="16dp" android:id="@+id/spinner3" app:layout_constraintTop_toBottomOf="@+id/spinner2" android:layout_marginLeft="16dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="56dp" android:layout_marginStart="8dp" android:id="@+id/textView4" app:layout_constraintStart_toEndOf="@+id/spinner2" android:textSize="20dp" android:text="이(가)" app:layout_constraintTop_toBottomOf="@+id/editText3"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="36dp" android:layout_marginStart="8dp" android:id="@+id/textView5" app:layout_constraintStart_toEndOf="@+id/spinner3" android:textSize="20dp" android:text="이(가)" app:layout_constraintTop_toBottomOf="@+id/textView4" android:layout_marginLeft="8dp"/>
+
+    <EditText android:layout_height="43dp" android:layout_width="94dp" android:inputType="textPersonName" android:hint="비율(%)" android:ems="10" android:layout_marginTop="44dp" android:layout_marginStart="20dp" android:id="@+id/editText5" app:layout_constraintStart_toEndOf="@+id/textView4" app:layout_constraintTop_toBottomOf="@+id/editText3"/>
+
+    <EditText android:layout_height="42dp" android:layout_width="94dp" android:inputType="textPersonName" android:hint="비율(%)" android:ems="10" android:layout_marginTop="24dp" android:layout_marginStart="20dp" android:id="@+id/editText6" app:layout_constraintStart_toEndOf="@+id/textView5" app:layout_constraintTop_toBottomOf="@+id/editText5" android:layout_marginLeft="20dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="40dp" android:layout_marginStart="8dp" android:id="@+id/textView6" android:textSize="15dp" android:text="넣을 거예요!" app:layout_constraintTop_toBottomOf="@+id/textView5" app:layout_constraintHorizontal_bias="0.501" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:id="@+id/button2" android:text="확인" app:layout_constraintTop_toBottomOf="@+id/textView6" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:onClick="ButtonClick"/>
+
+</android.support.constraint.ConstraintLayout>

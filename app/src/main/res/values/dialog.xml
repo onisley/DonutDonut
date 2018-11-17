@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="항목">
+
+        <item>수입</item>
+
+        <item>식비</item>
+
+        <item>여가비</item>
+
+        <item>기타</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "1061378102960",
+    "firebase_url": "https://donutdonut-91c63.firebaseio.com",
+    "project_id": "donutdonut-91c63",
+    "storage_bucket": "donutdonut-91c63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061378102960:android:c0f2fbe7c596682b",
+        "android_client_info": {
+          "package_name": "com.mobile.donut"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061378102960-0eagk4obj4ehnhu3efveapo0ppkdos09.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobile.donut",
+            "certificate_hash": "f310e746dc46c9dca6dfd2da42d366d2598664ac"
+          }
+        },
+        {
+          "client_id": "1061378102960-0mgs8sbin5752ei9kfhto5en1d3o7or4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobile.donut",
+            "certificate_hash": "559761030b9c530ad38d92d5145b7a11c923a8ab"
+          }
+        },
+        {
+          "client_id": "1061378102960-bv5bpajac8ct4a0jgm2tqj34prh09n1t.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1061378102960-bv5bpajac8ct4a0jgm2tqj34prh09n1t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbiZcSSbA4NA8OuiRRsStPC845K-1Z3Po"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061378102960-bv5bpajac8ct4a0jgm2tqj34prh09n1t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

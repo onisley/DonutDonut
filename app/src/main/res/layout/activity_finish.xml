@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<android.support.constraint.ConstraintLayout tools:context=".FinishActivity" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.502" app:layout_constraintEnd_toEndOf="parent" android:textSize="30dp" android:text="축하합니다!" android:layout_marginTop="124dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:id="@+id/textView14"/>
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="28dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:id="@+id/imageView5" app:srcCompat="@drawable/icon_save" app:layout_constraintTop_toBottomOf="@+id/textView14"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.502" app:layout_constraintEnd_toEndOf="parent" android:textSize="18dp" android:text="목표액을 달성 하였어요!" android:layout_marginTop="16dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:id="@+id/textView15" app:layout_constraintTop_toBottomOf="@+id/imageView5"/>
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="40dp" android:layout_marginStart="16dp" android:id="@+id/imageView6" app:srcCompat="@drawable/icon_clap" app:layout_constraintTop_toBottomOf="@+id/textView15"/>
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="40dp" android:layout_marginStart="28dp" android:id="@+id/imageView7" app:srcCompat="@drawable/icon_clap" app:layout_constraintTop_toBottomOf="@+id/textView15" app:layout_constraintStart_toEndOf="@+id/imageView6"/>
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="40dp" android:layout_marginStart="28dp" android:id="@+id/imageView8" app:srcCompat="@drawable/icon_clap" app:layout_constraintTop_toBottomOf="@+id/textView15" app:layout_constraintStart_toEndOf="@+id/imageView7"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onButtonMain"
+        android:text="메인메뉴로 돌아가기"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733" />
+
+</android.support.constraint.ConstraintLayout>
